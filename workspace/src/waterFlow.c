@@ -6,7 +6,7 @@
 #include "tim.h"
 #include <string.h>
 
-#define BUFFER_SIZE 2 // 10ms
+#define BUFFER_SIZE 2000 // 20ms
 uint16_t adc_buffer[BUFFER_SIZE];
 
 static uint32_t rev_Cmd = 0;
@@ -77,7 +77,14 @@ void Rs485RevData(uint8_t *buff, int32_t len)
   if (buff[0] == 0x03 && buff[1] == 0x01)
     rev_Cmd = 1;
 }
-
+void adc1Dma_cplt_callback( DMA_HandleTypeDef * _hdma)
+{
+  shellPrint(&shell, "full\n");
+}
+void adc1Dma_halfcplt_callback( DMA_HandleTypeDef * _hdma)
+{
+  shellPrint(&shell, "halt\n");
+}
 void initWaterFlowComponet(void)
 {
   // init led
@@ -89,10 +96,17 @@ void initWaterFlowComponet(void)
   shellInit(&shell);
 
   // init adc
+  HAL_DMA_RegisterCallback(&hdma_adc1, HAL_DMA_XFER_CPLT_CB_ID,adc1Dma_cplt_callback );
+  HAL_DMA_RegisterCallback(&hdma_adc1, HAL_DMA_XFER_HALFCPLT_CB_ID,adc1Dma_halfcplt_callback );
+  
   HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_buffer, BUFFER_SIZE);
   // init timer
-  HAL_TIM_Base_Start_IT(&htim3);
+  // HAL_TIM_Base_Start_IT(&htim3);
+  HAL_TIM_PWM_Init(&htim4);
+	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_4);
+  //init dma 
+  
   // init rs485
   createFifoRev(&huart2, Rs485RevData, UART_REV_DMA);
 }
@@ -188,6 +202,7 @@ void hal_tim_timer3_callback()
   // 10us
   checkWaterFlow();
 }
+
 uint32_t debug_log = 0;
 uint32_t debug_period = 0;
 void LoopWaterFlowComponet(void)

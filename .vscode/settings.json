@@ -4,6 +4,10 @@
         "revdatainfo.h": "c",
         "shell_cfg.h": "c",
         "shell.h": "c",
-        "waterflow.h": "c"
+        "waterflow.h": "c",
+        "shellusart.h": "c",
+        "adc.h": "c",
+        "usart.h": "c",
+        "tim.h": "c"
     }
 }

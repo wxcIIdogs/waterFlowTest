@@ -35,4 +35,5 @@ wateflowtest/waterflow.o: ..\workspace\src\waterFlow.c \
   ..\workspace\letter_shell\shell_cfg.h \
   ..\workspace\letter_shell\shell_ext.h ..\Core\Inc\adc.h \
   ..\workspace\inc\revDataInfo.h ..\Core\Inc\usart.h ..\Core\Inc\tim.h \
-  D:\Program\ Files\ (x86)\keil5\ARM\ARMCLANG\include\string.h
+  D:\Program\ Files\ (x86)\keil5\ARM\ARMCLANG\include\string.h \
+  D:\Program\ Files\ (x86)\keil5\ARM\ARMCLANG\include\stdio.h

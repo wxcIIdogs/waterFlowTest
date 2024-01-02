@@ -5,10 +5,11 @@
 #include "usart.h"
 #include "tim.h"
 #include <string.h>
-
+#include "stdio.h"
 #define BUFFER_SIZE 2000 // 20ms
 uint16_t adc_buffer[BUFFER_SIZE];
 
+uint16_t calc_buff[1000];
 static uint32_t rev_Cmd = 0;
 
 static enum waterflow_Status proStatus = WATERFLOW_UNKNOW;
@@ -77,14 +78,7 @@ void Rs485RevData(uint8_t *buff, int32_t len)
   if (buff[0] == 0x03 && buff[1] == 0x01)
     rev_Cmd = 1;
 }
-void adc1Dma_cplt_callback( DMA_HandleTypeDef * _hdma)
-{
-  shellPrint(&shell, "full\n");
-}
-void adc1Dma_halfcplt_callback( DMA_HandleTypeDef * _hdma)
-{
-  shellPrint(&shell, "halt\n");
-}
+
 void initWaterFlowComponet(void)
 {
   // init led
@@ -96,9 +90,6 @@ void initWaterFlowComponet(void)
   shellInit(&shell);
 
   // init adc
-  HAL_DMA_RegisterCallback(&hdma_adc1, HAL_DMA_XFER_CPLT_CB_ID,adc1Dma_cplt_callback );
-  HAL_DMA_RegisterCallback(&hdma_adc1, HAL_DMA_XFER_HALFCPLT_CB_ID,adc1Dma_halfcplt_callback );
-  
   HAL_ADCEx_Calibration_Start(&hadc1);
   HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_buffer, BUFFER_SIZE);
   // init timer
@@ -144,15 +135,15 @@ void LoopLedStatus()
   }
 }
 
-void checkWaterFlow()
+void checkWaterFlow(uint16_t curLeval)
 {
   static int32_t waterFlowHigh = 0;
   static int32_t waterFlowLow = 0;
   static int32_t waterFlowMax = 0;
   static int32_t waterFlowMin = 0;
   static int32_t waterFlowCount = 0;
-  uint16_t curLeval = adc_buffer[0];
-  uint16_t current = adc_buffer[1];
+  // uint16_t curLeval = adc_buffer[0];
+  // uint16_t current = adc_buffer[1];
 
   enum waterflow_Status curstatus = WATERFLOW_UNKNOW;
   if (curLeval > MAX_ADC_LEVEL)
@@ -171,7 +162,7 @@ void checkWaterFlow()
     if (simple_cur_min < curLeval)
       simple_cur_min = curLeval;
   }
-  if (waterFlowCount ++ - calcTime > 500*100)
+  if (waterFlowCount ++ - calcTime > 500*1000)
   {
     waterFlowHz = 0.0;
     waterFlowPeriod = 0.0;
@@ -187,7 +178,8 @@ void checkWaterFlow()
     waterFlowHigh = 0;
     waterFlowLow = 0;
     simple_cur_max = 4096;
-    simple_cur_min = 0;
+    // simple_cur_min = 0;
+    //shellPrint(&shell, "hz = %.2f,period=%.2f,max = %d,min = %d\n", waterFlowHz, waterFlowPeriod, simple_cur_max, simple_cur_min);
     if (waterFlowHz > MAX_HZ || waterFlowHz < MIN_HZ)
     {
       waterFlowPeriod = 0;
@@ -200,9 +192,25 @@ void checkWaterFlow()
 void hal_tim_timer3_callback()
 {
   // 10us
-  checkWaterFlow();
+  //checkWaterFlow();
 }
-
+static volatile int s_cov_flag = 0;
+void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef* hadc)
+{
+  // shellPrint(&shell, "halt\n");
+//  for(int i= 0 ; i < 1000 ; i++ )
+//    checkWaterFlow(adc_buffer[i]);
+	memcpy(calc_buff,adc_buffer + 0 ,1000);
+	s_cov_flag = 1;
+}
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{
+  // shellPrint(&shell, "full\n");
+//  for(int i= 1000 ; i < 2000 ; i++ )
+//    checkWaterFlow(adc_buffer[i]);
+	memcpy(calc_buff,adc_buffer + 1000 ,1000);
+	s_cov_flag = 1;
+}
 uint32_t debug_log = 0;
 uint32_t debug_period = 0;
 void LoopWaterFlowComponet(void)
@@ -218,6 +226,12 @@ void LoopWaterFlowComponet(void)
       shellPrint(&shell, "hz = %.2f,period=%.2f,max = %d,min = %d\n", waterFlowHz, waterFlowPeriod, simple_cur_max, simple_cur_min);
     }
   }
+	if(s_cov_flag == 1)
+	{
+		s_cov_flag = 0;
+		for(int i= 0 ; i < 1000 ; i++ )
+			checkWaterFlow(calc_buff[i]);
+	}
 
   componeSendData();
 }

@@ -154,6 +154,156 @@ Section Cross References
     stm32f1xx_hal_timebase_tim.o(.ARM.exidx.text.HAL_SuspendTick) refers to stm32f1xx_hal_timebase_tim.o(.text.HAL_SuspendTick) for [Anonymous Symbol]
     stm32f1xx_hal_timebase_tim.o(.text.HAL_ResumeTick) refers to stm32f1xx_hal_timebase_tim.o(.bss.htim1) for htim1
     stm32f1xx_hal_timebase_tim.o(.ARM.exidx.text.HAL_ResumeTick) refers to stm32f1xx_hal_timebase_tim.o(.text.HAL_ResumeTick) for [Anonymous Symbol]
+    system_stm32f1xx.o(.ARM.exidx.text.SystemInit) refers to system_stm32f1xx.o(.text.SystemInit) for [Anonymous Symbol]
+    system_stm32f1xx.o(.text.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.data.SystemCoreClock) for SystemCoreClock
+    system_stm32f1xx.o(.text.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    system_stm32f1xx.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    revdatainfo.o(.text.getFifoIndex) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
+    revdatainfo.o(.ARM.exidx.text.getFifoIndex) refers to revdatainfo.o(.text.getFifoIndex) for [Anonymous Symbol]
+    revdatainfo.o(.text.createFifoRev) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
+    revdatainfo.o(.text.createFifoRev) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_DMA) for HAL_UART_Receive_DMA
+    revdatainfo.o(.text.createFifoRev) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_IT) for HAL_UART_Receive_IT
+    revdatainfo.o(.ARM.exidx.text.createFifoRev) refers to revdatainfo.o(.text.createFifoRev) for [Anonymous Symbol]
+    revdatainfo.o(.text.setUartDmaIdleRev) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_DMA) for HAL_UART_Receive_DMA
+    revdatainfo.o(.ARM.exidx.text.setUartDmaIdleRev) refers to revdatainfo.o(.text.setUartDmaIdleRev) for [Anonymous Symbol]
+    revdatainfo.o(.text.setUartIntRev) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_IT) for HAL_UART_Receive_IT
+    revdatainfo.o(.ARM.exidx.text.setUartIntRev) refers to revdatainfo.o(.text.setUartIntRev) for [Anonymous Symbol]
+    revdatainfo.o(.text.delFifoRev) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
+    revdatainfo.o(.ARM.exidx.text.delFifoRev) refers to revdatainfo.o(.text.delFifoRev) for [Anonymous Symbol]
+    revdatainfo.o(.text.sendBuffFifo) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
+    revdatainfo.o(.text.sendBuffFifo) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    revdatainfo.o(.text.sendBuffFifo) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit) for HAL_UART_Transmit
+    revdatainfo.o(.text.sendBuffFifo) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit_IT) for HAL_UART_Transmit_IT
+    revdatainfo.o(.ARM.exidx.text.sendBuffFifo) refers to revdatainfo.o(.text.sendBuffFifo) for [Anonymous Symbol]
+    revdatainfo.o(.text.UsartReceive_IDLE) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
+    revdatainfo.o(.text.UsartReceive_IDLE) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_DMAStop) for HAL_UART_DMAStop
+    revdatainfo.o(.text.UsartReceive_IDLE) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    revdatainfo.o(.text.UsartReceive_IDLE) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_DMA) for HAL_UART_Receive_DMA
+    revdatainfo.o(.ARM.exidx.text.UsartReceive_IDLE) refers to revdatainfo.o(.text.UsartReceive_IDLE) for [Anonymous Symbol]
+    revdatainfo.o(.ARM.exidx.text.HAL_UART_ErrorCallback) refers to revdatainfo.o(.text.HAL_UART_ErrorCallback) for [Anonymous Symbol]
+    shellusart.o(.text.shellRevData) refers to shellusart.o(.bss.shell) for shell
+    shellusart.o(.text.shellRevData) refers to shell.o(.text.shellHandler) for shellHandler
+    shellusart.o(.ARM.exidx.text.shellRevData) refers to shellusart.o(.text.shellRevData) for [Anonymous Symbol]
+    shellusart.o(.text.initShellusart) refers to usart.o(.bss.huart1) for huart1
+    shellusart.o(.text.initShellusart) refers to shellusart.o(.text.shellRevData) for shellRevData
+    shellusart.o(.text.initShellusart) refers to revdatainfo.o(.text.createFifoRev) for createFifoRev
+    shellusart.o(.ARM.exidx.text.initShellusart) refers to shellusart.o(.text.initShellusart) for [Anonymous Symbol]
+    shellusart.o(.text.shellWriteDebug) refers to usart.o(.bss.huart1) for huart1
+    shellusart.o(.text.shellWriteDebug) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit) for HAL_UART_Transmit
+    shellusart.o(.ARM.exidx.text.shellWriteDebug) refers to shellusart.o(.text.shellWriteDebug) for [Anonymous Symbol]
+    waterflow.o(.ARM.exidx.text.modbus_crc) refers to waterflow.o(.text.modbus_crc) for [Anonymous Symbol]
+    waterflow.o(.text.Rs485SendData) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    waterflow.o(.text.Rs485SendData) refers to usart.o(.bss.huart2) for huart2
+    waterflow.o(.text.Rs485SendData) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit) for HAL_UART_Transmit
+    waterflow.o(.ARM.exidx.text.Rs485SendData) refers to waterflow.o(.text.Rs485SendData) for [Anonymous Symbol]
+    waterflow.o(.text.componeSendData) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    waterflow.o(.text.componeSendData) refers to rt_memclr.o(.text) for __aeabi_memclr
+    waterflow.o(.text.componeSendData) refers to fmul.o(x$fpl$fmul) for __aeabi_fmul
+    waterflow.o(.text.componeSendData) refers to ffixu.o(x$fpl$ffixu) for __aeabi_f2uiz
+    waterflow.o(.text.componeSendData) refers to waterflow.o(.data.simple_cur_max) for simple_cur_max
+    waterflow.o(.text.componeSendData) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    waterflow.o(.text.componeSendData) refers to usart.o(.bss.huart2) for huart2
+    waterflow.o(.text.componeSendData) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit) for HAL_UART_Transmit
+    waterflow.o(.ARM.exidx.text.componeSendData) refers to waterflow.o(.text.componeSendData) for [Anonymous Symbol]
+    waterflow.o(.text.Rs485RevData) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    waterflow.o(.ARM.exidx.text.Rs485RevData) refers to waterflow.o(.text.Rs485RevData) for [Anonymous Symbol]
+    waterflow.o(.text.initWaterFlowComponet) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    waterflow.o(.text.initWaterFlowComponet) refers to shellusart.o(.text.initShellusart) for initShellusart
+    waterflow.o(.text.initWaterFlowComponet) refers to shellusart.o(.bss.shell) for shell
+    waterflow.o(.text.initWaterFlowComponet) refers to shellusart.o(.text.shellWriteDebug) for shellWriteDebug
+    waterflow.o(.text.initWaterFlowComponet) refers to shell.o(.text.shellInit) for shellInit
+    waterflow.o(.text.initWaterFlowComponet) refers to adc.o(.bss.hadc1) for hadc1
+    waterflow.o(.text.initWaterFlowComponet) refers to stm32f1xx_hal_adc_ex.o(.text.HAL_ADCEx_Calibration_Start) for HAL_ADCEx_Calibration_Start
+    waterflow.o(.text.initWaterFlowComponet) refers to stm32f1xx_hal_adc.o(.text.HAL_ADC_Start_DMA) for HAL_ADC_Start_DMA
+    waterflow.o(.text.initWaterFlowComponet) refers to tim.o(.bss.htim3) for htim3
+    waterflow.o(.text.initWaterFlowComponet) refers to stm32f1xx_hal_tim.o(.text.HAL_TIM_Base_Start_IT) for HAL_TIM_Base_Start_IT
+    waterflow.o(.text.initWaterFlowComponet) refers to usart.o(.bss.huart2) for huart2
+    waterflow.o(.text.initWaterFlowComponet) refers to waterflow.o(.text.Rs485RevData) for Rs485RevData
+    waterflow.o(.text.initWaterFlowComponet) refers to revdatainfo.o(.text.createFifoRev) for createFifoRev
+    waterflow.o(.ARM.exidx.text.initWaterFlowComponet) refers to waterflow.o(.text.initWaterFlowComponet) for [Anonymous Symbol]
+    waterflow.o(.text.setLedStatus) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    waterflow.o(.text.setLedStatus) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    waterflow.o(.ARM.exidx.text.setLedStatus) refers to waterflow.o(.text.setLedStatus) for [Anonymous Symbol]
+    waterflow.o(.text.LoopLedStatus) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    waterflow.o(.text.LoopLedStatus) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
+    waterflow.o(.ARM.exidx.text.LoopLedStatus) refers to waterflow.o(.text.LoopLedStatus) for [Anonymous Symbol]
+    waterflow.o(.text.checkWaterFlow) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    waterflow.o(.text.checkWaterFlow) refers to waterflow.o(.data.simple_cur_max) for simple_cur_max
+    waterflow.o(.text.checkWaterFlow) refers to dflt_clz.o(x$fpl$dflt) for __aeabi_i2d
+    waterflow.o(.text.checkWaterFlow) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    waterflow.o(.text.checkWaterFlow) refers to d2f.o(x$fpl$d2f) for __aeabi_d2f
+    waterflow.o(.text.checkWaterFlow) refers to fflt_clz.o(x$fpl$fflt) for __aeabi_i2f
+    waterflow.o(.text.checkWaterFlow) refers to fdiv.o(x$fpl$fdiv) for __aeabi_fdiv
+    waterflow.o(.text.checkWaterFlow) refers to fcmp.o(x$fpl$fcmp) for __aeabi_fcmpgt
+    waterflow.o(.ARM.exidx.text.checkWaterFlow) refers to waterflow.o(.text.checkWaterFlow) for [Anonymous Symbol]
+    waterflow.o(.text.hal_tim_timer3_callback) refers to waterflow.o(.text.checkWaterFlow) for checkWaterFlow
+    waterflow.o(.ARM.exidx.text.hal_tim_timer3_callback) refers to waterflow.o(.text.hal_tim_timer3_callback) for [Anonymous Symbol]
+    waterflow.o(.text.LoopWaterFlowComponet) refers to stm32f1xx_hal.o(.text.HAL_Delay) for HAL_Delay
+    waterflow.o(.text.LoopWaterFlowComponet) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    waterflow.o(.text.LoopWaterFlowComponet) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
+    waterflow.o(.text.LoopWaterFlowComponet) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
+    waterflow.o(.text.LoopWaterFlowComponet) refers to waterflow.o(.data.simple_cur_max) for simple_cur_max
+    waterflow.o(.text.LoopWaterFlowComponet) refers to shellusart.o(.bss.shell) for shell
+    waterflow.o(.text.LoopWaterFlowComponet) refers to shell.o(.text.shellPrint) for shellPrint
+    waterflow.o(.text.LoopWaterFlowComponet) refers to waterflow.o(.text.componeSendData) for componeSendData
+    waterflow.o(.ARM.exidx.text.LoopWaterFlowComponet) refers to waterflow.o(.text.LoopWaterFlowComponet) for [Anonymous Symbol]
+    waterflow.o(.text.setDebugLog) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
+    waterflow.o(.ARM.exidx.text.setDebugLog) refers to waterflow.o(.text.setDebugLog) for [Anonymous Symbol]
+    waterflow.o(shellCommand) refers to waterflow.o(.rodata.shellCmddebuglog) for shellCmddebuglog
+    waterflow.o(shellCommand) refers to waterflow.o(.text.setDebugLog) for setDebugLog
+    waterflow.o(shellCommand) refers to waterflow.o(.rodata.shellDescdebuglog) for shellDescdebuglog
+    shell.o(.text.shellEnter) refers to strcmpv7m.o(.text) for strcmp
+    shell.o(.text.shellEnter) refers to shell.o(.rodata.shellCmdhelp) for shellCmdhelp
+    shell.o(.text.shellEnter) refers to shell.o(.text.shellHelp) for shellHelp
+    shell.o(.text.shellEnter) refers to shell_ext.o(.text.shellExtRun) for shellExtRun
+    shell.o(.ARM.exidx.text.shellEnter) refers to shell.o(.text.shellEnter) for [Anonymous Symbol]
+    shell.o(.text.shellTab) refers to shell.o(.text.shellDisplayItem) for shellDisplayItem
+    shell.o(.text.shellTab) refers to shell.o(.text.shellHelp) for shellHelp
+    shell.o(.ARM.exidx.text.shellTab) refers to shell.o(.text.shellTab) for [Anonymous Symbol]
+    shell.o(.ARM.exidx.text.shellBackspace) refers to shell.o(.text.shellBackspace) for [Anonymous Symbol]
+    shell.o(.ARM.exidx.text.shellAnsiStart) refers to shell.o(.text.shellAnsiStart) for [Anonymous Symbol]
+    shell.o(.text.shellInit) refers to shell.o(.bss.shellList) for shellList
+    shell.o(.text.shellInit) refers to shell.o(.rodata.str1.1) for .L.str.5
+    shell.o(.ARM.exidx.text.shellInit) refers to shell.o(.text.shellInit) for [Anonymous Symbol]
+    shell.o(.ARM.exidx.text.shellDisplay) refers to shell.o(.text.shellDisplay) for [Anonymous Symbol]
+    shell.o(.ARM.exidx.text.shellSetKeyFuncList) refers to shell.o(.text.shellSetKeyFuncList) for [Anonymous Symbol]
+    shell.o(.text.shellGetCurrent) refers to shell.o(.bss.shellList) for shellList
+    shell.o(.ARM.exidx.text.shellGetCurrent) refers to shell.o(.text.shellGetCurrent) for [Anonymous Symbol]
+    shell.o(.text.shellPrint) refers to vsnprintf.o(.text) for vsnprintf
+    shell.o(.ARM.exidx.text.shellPrint) refers to shell.o(.text.shellPrint) for [Anonymous Symbol]
+    shell.o(.text.shellAnsi) refers to shell.o(.text.shellHistory) for shellHistory
+    shell.o(.ARM.exidx.text.shellAnsi) refers to shell.o(.text.shellAnsi) for [Anonymous Symbol]
+    shell.o(.ARM.exidx.text.shellHistory) refers to shell.o(.text.shellHistory) for [Anonymous Symbol]
+    shell.o(.text.shellHandler) refers to shell.o(.text.shellAnsi) for shellAnsi
+    shell.o(.text.shellHandler) refers to shell.o(.text.shellEnter) for shellEnter
+    shell.o(.text.shellHandler) refers to shell.o(.text.shellBackspace) for shellBackspace
+    shell.o(.text.shellHandler) refers to shell.o(.text.shellTab) for shellTab
+    shell.o(.ARM.exidx.text.shellHandler) refers to shell.o(.text.shellHandler) for [Anonymous Symbol]
+    shell.o(.text.shellHelp) refers to shell.o(.bss.shellList) for shellList
+    shell.o(.text.shellHelp) refers to shell.o(.text.shellDisplayItem) for shellDisplayItem
+    shell.o(.text.shellHelp) refers to strcmpv7m.o(.text) for strcmp
+    shell.o(.ARM.exidx.text.shellHelp) refers to shell.o(.text.shellHelp) for [Anonymous Symbol]
+    shell.o(.ARM.exidx.text.shellDisplayItem) refers to shell.o(.text.shellDisplayItem) for [Anonymous Symbol]
+    shell.o(.text.shellClear) refers to shell.o(.bss.shellList) for shellList
+    shell.o(.ARM.exidx.text.shellClear) refers to shell.o(.text.shellClear) for [Anonymous Symbol]
+    shell.o(.rodata.shellDefaultKeyFunctionList) refers to shell.o(.text.shellEnter) for shellEnter
+    shell.o(.rodata.shellDefaultKeyFunctionList) refers to shell.o(.text.shellTab) for shellTab
+    shell.o(.rodata.shellDefaultKeyFunctionList) refers to shell.o(.text.shellBackspace) for shellBackspace
+    shell.o(.rodata.shellDefaultKeyFunctionList) refers to shell.o(.text.shellAnsiStart) for shellAnsiStart
+    shell.o(shellCommand) refers to shell.o(.rodata.shellCmdhelp) for shellCmdhelp
+    shell.o(shellCommand) refers to shell.o(.text.shellHelp) for shellHelp
+    shell.o(shellCommand) refers to shell.o(.rodata.shellDeschelp) for shellDeschelp
+    shell.o(shellCommand) refers to shell.o(.rodata.shellHelphelp) for shellHelphelp
+    shell.o(shellCommand) refers to shell.o(.rodata.shellCmdcls) for shellCmdcls
+    shell.o(shellCommand) refers to shell.o(.text.shellClear) for shellClear
+    shell.o(shellCommand) refers to shell.o(.rodata.shellDesccls) for shellDesccls
+    shell_ext.o(.text.shellExtParsePara) refers to fflt_clz.o(x$fpl$ffltu) for __aeabi_ui2f
+    shell_ext.o(.text.shellExtParsePara) refers to fdiv.o(x$fpl$fdiv) for __aeabi_fdiv
+    shell_ext.o(.text.shellExtParsePara) refers to fflt_clz.o(x$fpl$fflt) for __aeabi_i2f
+    shell_ext.o(.text.shellExtParsePara) refers to fmul.o(x$fpl$fmul) for __aeabi_fmul
+    shell_ext.o(.ARM.exidx.text.shellExtParsePara) refers to shell_ext.o(.text.shellExtParsePara) for [Anonymous Symbol]
+    shell_ext.o(.text.shellExtRun) refers to shell_ext.o(.text.shellExtParsePara) for shellExtParsePara
+    shell_ext.o(.ARM.exidx.text.shellExtRun) refers to shell_ext.o(.text.shellExtRun) for [Anonymous Symbol]
     stm32f1xx_hal_gpio_ex.o(.ARM.exidx.text.HAL_GPIOEx_ConfigEventout) refers to stm32f1xx_hal_gpio_ex.o(.text.HAL_GPIOEx_ConfigEventout) for [Anonymous Symbol]
     stm32f1xx_hal_gpio_ex.o(.ARM.exidx.text.HAL_GPIOEx_EnableEventout) refers to stm32f1xx_hal_gpio_ex.o(.text.HAL_GPIOEx_EnableEventout) for [Anonymous Symbol]
     stm32f1xx_hal_gpio_ex.o(.ARM.exidx.text.HAL_GPIOEx_DisableEventout) refers to stm32f1xx_hal_gpio_ex.o(.text.HAL_GPIOEx_DisableEventout) for [Anonymous Symbol]
@@ -838,156 +988,6 @@ Section Cross References
     stm32f1xx_hal_uart.o(.text.UART_DMARxHalfCplt) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_RxHalfCpltCallback) for HAL_UART_RxHalfCpltCallback
     stm32f1xx_hal_uart.o(.text.UART_DMARxHalfCplt) refers to stm32f1xx_hal_uart.o(.text.HAL_UARTEx_RxEventCallback) for HAL_UARTEx_RxEventCallback
     stm32f1xx_hal_uart.o(.ARM.exidx.text.UART_DMARxHalfCplt) refers to stm32f1xx_hal_uart.o(.text.UART_DMARxHalfCplt) for [Anonymous Symbol]
-    system_stm32f1xx.o(.ARM.exidx.text.SystemInit) refers to system_stm32f1xx.o(.text.SystemInit) for [Anonymous Symbol]
-    system_stm32f1xx.o(.text.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.data.SystemCoreClock) for SystemCoreClock
-    system_stm32f1xx.o(.text.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.rodata.AHBPrescTable) for AHBPrescTable
-    system_stm32f1xx.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
-    revdatainfo.o(.text.getFifoIndex) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
-    revdatainfo.o(.ARM.exidx.text.getFifoIndex) refers to revdatainfo.o(.text.getFifoIndex) for [Anonymous Symbol]
-    revdatainfo.o(.text.createFifoRev) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
-    revdatainfo.o(.text.createFifoRev) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_DMA) for HAL_UART_Receive_DMA
-    revdatainfo.o(.text.createFifoRev) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_IT) for HAL_UART_Receive_IT
-    revdatainfo.o(.ARM.exidx.text.createFifoRev) refers to revdatainfo.o(.text.createFifoRev) for [Anonymous Symbol]
-    revdatainfo.o(.text.setUartDmaIdleRev) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_DMA) for HAL_UART_Receive_DMA
-    revdatainfo.o(.ARM.exidx.text.setUartDmaIdleRev) refers to revdatainfo.o(.text.setUartDmaIdleRev) for [Anonymous Symbol]
-    revdatainfo.o(.text.setUartIntRev) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_IT) for HAL_UART_Receive_IT
-    revdatainfo.o(.ARM.exidx.text.setUartIntRev) refers to revdatainfo.o(.text.setUartIntRev) for [Anonymous Symbol]
-    revdatainfo.o(.text.delFifoRev) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
-    revdatainfo.o(.ARM.exidx.text.delFifoRev) refers to revdatainfo.o(.text.delFifoRev) for [Anonymous Symbol]
-    revdatainfo.o(.text.sendBuffFifo) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
-    revdatainfo.o(.text.sendBuffFifo) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
-    revdatainfo.o(.text.sendBuffFifo) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit) for HAL_UART_Transmit
-    revdatainfo.o(.text.sendBuffFifo) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit_IT) for HAL_UART_Transmit_IT
-    revdatainfo.o(.ARM.exidx.text.sendBuffFifo) refers to revdatainfo.o(.text.sendBuffFifo) for [Anonymous Symbol]
-    revdatainfo.o(.text.UsartReceive_IDLE) refers to revdatainfo.o(.bss.sg_uartRevFifoBuff) for sg_uartRevFifoBuff
-    revdatainfo.o(.text.UsartReceive_IDLE) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_DMAStop) for HAL_UART_DMAStop
-    revdatainfo.o(.text.UsartReceive_IDLE) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
-    revdatainfo.o(.text.UsartReceive_IDLE) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Receive_DMA) for HAL_UART_Receive_DMA
-    revdatainfo.o(.ARM.exidx.text.UsartReceive_IDLE) refers to revdatainfo.o(.text.UsartReceive_IDLE) for [Anonymous Symbol]
-    revdatainfo.o(.ARM.exidx.text.HAL_UART_ErrorCallback) refers to revdatainfo.o(.text.HAL_UART_ErrorCallback) for [Anonymous Symbol]
-    shellusart.o(.text.shellRevData) refers to shellusart.o(.bss.shell) for shell
-    shellusart.o(.text.shellRevData) refers to shell.o(.text.shellHandler) for shellHandler
-    shellusart.o(.ARM.exidx.text.shellRevData) refers to shellusart.o(.text.shellRevData) for [Anonymous Symbol]
-    shellusart.o(.text.initShellusart) refers to usart.o(.bss.huart1) for huart1
-    shellusart.o(.text.initShellusart) refers to shellusart.o(.text.shellRevData) for shellRevData
-    shellusart.o(.text.initShellusart) refers to revdatainfo.o(.text.createFifoRev) for createFifoRev
-    shellusart.o(.ARM.exidx.text.initShellusart) refers to shellusart.o(.text.initShellusart) for [Anonymous Symbol]
-    shellusart.o(.text.shellWriteDebug) refers to usart.o(.bss.huart1) for huart1
-    shellusart.o(.text.shellWriteDebug) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit) for HAL_UART_Transmit
-    shellusart.o(.ARM.exidx.text.shellWriteDebug) refers to shellusart.o(.text.shellWriteDebug) for [Anonymous Symbol]
-    waterflow.o(.ARM.exidx.text.modbus_crc) refers to waterflow.o(.text.modbus_crc) for [Anonymous Symbol]
-    waterflow.o(.text.Rs485SendData) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
-    waterflow.o(.text.Rs485SendData) refers to usart.o(.bss.huart2) for huart2
-    waterflow.o(.text.Rs485SendData) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit) for HAL_UART_Transmit
-    waterflow.o(.ARM.exidx.text.Rs485SendData) refers to waterflow.o(.text.Rs485SendData) for [Anonymous Symbol]
-    waterflow.o(.text.componeSendData) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
-    waterflow.o(.text.componeSendData) refers to rt_memclr.o(.text) for __aeabi_memclr
-    waterflow.o(.text.componeSendData) refers to fmul.o(x$fpl$fmul) for __aeabi_fmul
-    waterflow.o(.text.componeSendData) refers to ffixu.o(x$fpl$ffixu) for __aeabi_f2uiz
-    waterflow.o(.text.componeSendData) refers to waterflow.o(.data.simple_cur_max) for simple_cur_max
-    waterflow.o(.text.componeSendData) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
-    waterflow.o(.text.componeSendData) refers to usart.o(.bss.huart2) for huart2
-    waterflow.o(.text.componeSendData) refers to stm32f1xx_hal_uart.o(.text.HAL_UART_Transmit) for HAL_UART_Transmit
-    waterflow.o(.ARM.exidx.text.componeSendData) refers to waterflow.o(.text.componeSendData) for [Anonymous Symbol]
-    waterflow.o(.text.Rs485RevData) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
-    waterflow.o(.ARM.exidx.text.Rs485RevData) refers to waterflow.o(.text.Rs485RevData) for [Anonymous Symbol]
-    waterflow.o(.text.initWaterFlowComponet) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
-    waterflow.o(.text.initWaterFlowComponet) refers to shellusart.o(.text.initShellusart) for initShellusart
-    waterflow.o(.text.initWaterFlowComponet) refers to shellusart.o(.bss.shell) for shell
-    waterflow.o(.text.initWaterFlowComponet) refers to shellusart.o(.text.shellWriteDebug) for shellWriteDebug
-    waterflow.o(.text.initWaterFlowComponet) refers to shell.o(.text.shellInit) for shellInit
-    waterflow.o(.text.initWaterFlowComponet) refers to adc.o(.bss.hadc1) for hadc1
-    waterflow.o(.text.initWaterFlowComponet) refers to stm32f1xx_hal_adc_ex.o(.text.HAL_ADCEx_Calibration_Start) for HAL_ADCEx_Calibration_Start
-    waterflow.o(.text.initWaterFlowComponet) refers to stm32f1xx_hal_adc.o(.text.HAL_ADC_Start_DMA) for HAL_ADC_Start_DMA
-    waterflow.o(.text.initWaterFlowComponet) refers to tim.o(.bss.htim3) for htim3
-    waterflow.o(.text.initWaterFlowComponet) refers to stm32f1xx_hal_tim.o(.text.HAL_TIM_Base_Start_IT) for HAL_TIM_Base_Start_IT
-    waterflow.o(.text.initWaterFlowComponet) refers to usart.o(.bss.huart2) for huart2
-    waterflow.o(.text.initWaterFlowComponet) refers to waterflow.o(.text.Rs485RevData) for Rs485RevData
-    waterflow.o(.text.initWaterFlowComponet) refers to revdatainfo.o(.text.createFifoRev) for createFifoRev
-    waterflow.o(.ARM.exidx.text.initWaterFlowComponet) refers to waterflow.o(.text.initWaterFlowComponet) for [Anonymous Symbol]
-    waterflow.o(.text.setLedStatus) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
-    waterflow.o(.text.setLedStatus) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
-    waterflow.o(.ARM.exidx.text.setLedStatus) refers to waterflow.o(.text.setLedStatus) for [Anonymous Symbol]
-    waterflow.o(.text.LoopLedStatus) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
-    waterflow.o(.text.LoopLedStatus) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
-    waterflow.o(.ARM.exidx.text.LoopLedStatus) refers to waterflow.o(.text.LoopLedStatus) for [Anonymous Symbol]
-    waterflow.o(.text.checkWaterFlow) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
-    waterflow.o(.text.checkWaterFlow) refers to waterflow.o(.data.simple_cur_max) for simple_cur_max
-    waterflow.o(.text.checkWaterFlow) refers to dflt_clz.o(x$fpl$dflt) for __aeabi_i2d
-    waterflow.o(.text.checkWaterFlow) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
-    waterflow.o(.text.checkWaterFlow) refers to d2f.o(x$fpl$d2f) for __aeabi_d2f
-    waterflow.o(.text.checkWaterFlow) refers to fflt_clz.o(x$fpl$fflt) for __aeabi_i2f
-    waterflow.o(.text.checkWaterFlow) refers to fdiv.o(x$fpl$fdiv) for __aeabi_fdiv
-    waterflow.o(.text.checkWaterFlow) refers to fcmp.o(x$fpl$fcmp) for __aeabi_fcmpgt
-    waterflow.o(.ARM.exidx.text.checkWaterFlow) refers to waterflow.o(.text.checkWaterFlow) for [Anonymous Symbol]
-    waterflow.o(.text.hal_tim_timer3_callback) refers to waterflow.o(.text.checkWaterFlow) for checkWaterFlow
-    waterflow.o(.ARM.exidx.text.hal_tim_timer3_callback) refers to waterflow.o(.text.hal_tim_timer3_callback) for [Anonymous Symbol]
-    waterflow.o(.text.LoopWaterFlowComponet) refers to stm32f1xx_hal.o(.text.HAL_Delay) for HAL_Delay
-    waterflow.o(.text.LoopWaterFlowComponet) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
-    waterflow.o(.text.LoopWaterFlowComponet) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
-    waterflow.o(.text.LoopWaterFlowComponet) refers to f2d.o(x$fpl$f2d) for __aeabi_f2d
-    waterflow.o(.text.LoopWaterFlowComponet) refers to waterflow.o(.data.simple_cur_max) for simple_cur_max
-    waterflow.o(.text.LoopWaterFlowComponet) refers to shellusart.o(.bss.shell) for shell
-    waterflow.o(.text.LoopWaterFlowComponet) refers to shell.o(.text.shellPrint) for shellPrint
-    waterflow.o(.text.LoopWaterFlowComponet) refers to waterflow.o(.text.componeSendData) for componeSendData
-    waterflow.o(.ARM.exidx.text.LoopWaterFlowComponet) refers to waterflow.o(.text.LoopWaterFlowComponet) for [Anonymous Symbol]
-    waterflow.o(.text.setDebugLog) refers to waterflow.o(.bss..L_MergedGlobals) for .L_MergedGlobals
-    waterflow.o(.ARM.exidx.text.setDebugLog) refers to waterflow.o(.text.setDebugLog) for [Anonymous Symbol]
-    waterflow.o(shellCommand) refers to waterflow.o(.rodata.shellCmddebuglog) for shellCmddebuglog
-    waterflow.o(shellCommand) refers to waterflow.o(.text.setDebugLog) for setDebugLog
-    waterflow.o(shellCommand) refers to waterflow.o(.rodata.shellDescdebuglog) for shellDescdebuglog
-    shell.o(.text.shellEnter) refers to strcmpv7m.o(.text) for strcmp
-    shell.o(.text.shellEnter) refers to shell.o(.rodata.shellCmdhelp) for shellCmdhelp
-    shell.o(.text.shellEnter) refers to shell.o(.text.shellHelp) for shellHelp
-    shell.o(.text.shellEnter) refers to shell_ext.o(.text.shellExtRun) for shellExtRun
-    shell.o(.ARM.exidx.text.shellEnter) refers to shell.o(.text.shellEnter) for [Anonymous Symbol]
-    shell.o(.text.shellTab) refers to shell.o(.text.shellDisplayItem) for shellDisplayItem
-    shell.o(.text.shellTab) refers to shell.o(.text.shellHelp) for shellHelp
-    shell.o(.ARM.exidx.text.shellTab) refers to shell.o(.text.shellTab) for [Anonymous Symbol]
-    shell.o(.ARM.exidx.text.shellBackspace) refers to shell.o(.text.shellBackspace) for [Anonymous Symbol]
-    shell.o(.ARM.exidx.text.shellAnsiStart) refers to shell.o(.text.shellAnsiStart) for [Anonymous Symbol]
-    shell.o(.text.shellInit) refers to shell.o(.bss.shellList) for shellList
-    shell.o(.text.shellInit) refers to shell.o(.rodata.str1.1) for .L.str.5
-    shell.o(.ARM.exidx.text.shellInit) refers to shell.o(.text.shellInit) for [Anonymous Symbol]
-    shell.o(.ARM.exidx.text.shellDisplay) refers to shell.o(.text.shellDisplay) for [Anonymous Symbol]
-    shell.o(.ARM.exidx.text.shellSetKeyFuncList) refers to shell.o(.text.shellSetKeyFuncList) for [Anonymous Symbol]
-    shell.o(.text.shellGetCurrent) refers to shell.o(.bss.shellList) for shellList
-    shell.o(.ARM.exidx.text.shellGetCurrent) refers to shell.o(.text.shellGetCurrent) for [Anonymous Symbol]
-    shell.o(.text.shellPrint) refers to vsnprintf.o(.text) for vsnprintf
-    shell.o(.ARM.exidx.text.shellPrint) refers to shell.o(.text.shellPrint) for [Anonymous Symbol]
-    shell.o(.text.shellAnsi) refers to shell.o(.text.shellHistory) for shellHistory
-    shell.o(.ARM.exidx.text.shellAnsi) refers to shell.o(.text.shellAnsi) for [Anonymous Symbol]
-    shell.o(.ARM.exidx.text.shellHistory) refers to shell.o(.text.shellHistory) for [Anonymous Symbol]
-    shell.o(.text.shellHandler) refers to shell.o(.text.shellAnsi) for shellAnsi
-    shell.o(.text.shellHandler) refers to shell.o(.text.shellEnter) for shellEnter
-    shell.o(.text.shellHandler) refers to shell.o(.text.shellBackspace) for shellBackspace
-    shell.o(.text.shellHandler) refers to shell.o(.text.shellTab) for shellTab
-    shell.o(.ARM.exidx.text.shellHandler) refers to shell.o(.text.shellHandler) for [Anonymous Symbol]
-    shell.o(.text.shellHelp) refers to shell.o(.bss.shellList) for shellList
-    shell.o(.text.shellHelp) refers to shell.o(.text.shellDisplayItem) for shellDisplayItem
-    shell.o(.text.shellHelp) refers to strcmpv7m.o(.text) for strcmp
-    shell.o(.ARM.exidx.text.shellHelp) refers to shell.o(.text.shellHelp) for [Anonymous Symbol]
-    shell.o(.ARM.exidx.text.shellDisplayItem) refers to shell.o(.text.shellDisplayItem) for [Anonymous Symbol]
-    shell.o(.text.shellClear) refers to shell.o(.bss.shellList) for shellList
-    shell.o(.ARM.exidx.text.shellClear) refers to shell.o(.text.shellClear) for [Anonymous Symbol]
-    shell.o(.rodata.shellDefaultKeyFunctionList) refers to shell.o(.text.shellEnter) for shellEnter
-    shell.o(.rodata.shellDefaultKeyFunctionList) refers to shell.o(.text.shellTab) for shellTab
-    shell.o(.rodata.shellDefaultKeyFunctionList) refers to shell.o(.text.shellBackspace) for shellBackspace
-    shell.o(.rodata.shellDefaultKeyFunctionList) refers to shell.o(.text.shellAnsiStart) for shellAnsiStart
-    shell.o(shellCommand) refers to shell.o(.rodata.shellCmdhelp) for shellCmdhelp
-    shell.o(shellCommand) refers to shell.o(.text.shellHelp) for shellHelp
-    shell.o(shellCommand) refers to shell.o(.rodata.shellDeschelp) for shellDeschelp
-    shell.o(shellCommand) refers to shell.o(.rodata.shellHelphelp) for shellHelphelp
-    shell.o(shellCommand) refers to shell.o(.rodata.shellCmdcls) for shellCmdcls
-    shell.o(shellCommand) refers to shell.o(.text.shellClear) for shellClear
-    shell.o(shellCommand) refers to shell.o(.rodata.shellDesccls) for shellDesccls
-    shell_ext.o(.text.shellExtParsePara) refers to fflt_clz.o(x$fpl$ffltu) for __aeabi_ui2f
-    shell_ext.o(.text.shellExtParsePara) refers to fdiv.o(x$fpl$fdiv) for __aeabi_fdiv
-    shell_ext.o(.text.shellExtParsePara) refers to fflt_clz.o(x$fpl$fflt) for __aeabi_i2f
-    shell_ext.o(.text.shellExtParsePara) refers to fmul.o(x$fpl$fmul) for __aeabi_fmul
-    shell_ext.o(.ARM.exidx.text.shellExtParsePara) refers to shell_ext.o(.text.shellExtParsePara) for [Anonymous Symbol]
-    shell_ext.o(.text.shellExtRun) refers to shell_ext.o(.text.shellExtParsePara) for shellExtParsePara
-    shell_ext.o(.ARM.exidx.text.shellExtRun) refers to shell_ext.o(.text.shellExtRun) for [Anonymous Symbol]
     vsnprintf.o(.text) refers (Special) to _printf_a.o(.ARM.Collect$$_printf_percent$$00000006) for _printf_a
     vsnprintf.o(.text) refers (Special) to _printf_c.o(.ARM.Collect$$_printf_percent$$00000013) for _printf_c
     vsnprintf.o(.text) refers (Special) to _printf_charcount.o(.text) for _printf_charcount
@@ -1406,6 +1406,69 @@ Removing Unused input sections from the image.
     Removing stm32f1xx_hal_timebase_tim.o(.ARM.exidx.text.HAL_SuspendTick), (8 bytes).
     Removing stm32f1xx_hal_timebase_tim.o(.text.HAL_ResumeTick), (20 bytes).
     Removing stm32f1xx_hal_timebase_tim.o(.ARM.exidx.text.HAL_ResumeTick), (8 bytes).
+    Removing system_stm32f1xx.o(.text), (0 bytes).
+    Removing system_stm32f1xx.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_stm32f1xx.o(.text.SystemCoreClockUpdate), (92 bytes).
+    Removing system_stm32f1xx.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing revdatainfo.o(.text), (0 bytes).
+    Removing revdatainfo.o(.text.getFifoIndex), (72 bytes).
+    Removing revdatainfo.o(.ARM.exidx.text.getFifoIndex), (8 bytes).
+    Removing revdatainfo.o(.ARM.exidx.text.createFifoRev), (8 bytes).
+    Removing revdatainfo.o(.text.setUartDmaIdleRev), (32 bytes).
+    Removing revdatainfo.o(.ARM.exidx.text.setUartDmaIdleRev), (8 bytes).
+    Removing revdatainfo.o(.text.setUartIntRev), (30 bytes).
+    Removing revdatainfo.o(.ARM.exidx.text.setUartIntRev), (8 bytes).
+    Removing revdatainfo.o(.text.delFifoRev), (24 bytes).
+    Removing revdatainfo.o(.ARM.exidx.text.delFifoRev), (8 bytes).
+    Removing revdatainfo.o(.text.sendBuffFifo), (92 bytes).
+    Removing revdatainfo.o(.ARM.exidx.text.sendBuffFifo), (8 bytes).
+    Removing revdatainfo.o(.ARM.exidx.text.UsartReceive_IDLE), (8 bytes).
+    Removing revdatainfo.o(.ARM.exidx.text.HAL_UART_ErrorCallback), (8 bytes).
+    Removing shellusart.o(.text), (0 bytes).
+    Removing shellusart.o(.ARM.exidx.text.shellRevData), (8 bytes).
+    Removing shellusart.o(.ARM.exidx.text.initShellusart), (8 bytes).
+    Removing shellusart.o(.ARM.exidx.text.shellWriteDebug), (8 bytes).
+    Removing waterflow.o(.text), (0 bytes).
+    Removing waterflow.o(.text.modbus_crc), (328 bytes).
+    Removing waterflow.o(.ARM.exidx.text.modbus_crc), (8 bytes).
+    Removing waterflow.o(.text.Rs485SendData), (58 bytes).
+    Removing waterflow.o(.ARM.exidx.text.Rs485SendData), (8 bytes).
+    Removing waterflow.o(.ARM.exidx.text.componeSendData), (8 bytes).
+    Removing waterflow.o(.ARM.exidx.text.Rs485RevData), (8 bytes).
+    Removing waterflow.o(.ARM.exidx.text.initWaterFlowComponet), (8 bytes).
+    Removing waterflow.o(.text.setLedStatus), (96 bytes).
+    Removing waterflow.o(.ARM.exidx.text.setLedStatus), (8 bytes).
+    Removing waterflow.o(.text.LoopLedStatus), (46 bytes).
+    Removing waterflow.o(.ARM.exidx.text.LoopLedStatus), (8 bytes).
+    Removing waterflow.o(.ARM.exidx.text.checkWaterFlow), (8 bytes).
+    Removing waterflow.o(.ARM.exidx.text.hal_tim_timer3_callback), (8 bytes).
+    Removing waterflow.o(.ARM.exidx.text.LoopWaterFlowComponet), (8 bytes).
+    Removing waterflow.o(.ARM.exidx.text.setDebugLog), (8 bytes).
+    Removing shell.o(.text), (0 bytes).
+    Removing shell.o(.ARM.exidx.text.shellEnter), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellTab), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellBackspace), (8 bytes).
+    Removing shell.o(.text.shellAnsiStart), (16 bytes).
+    Removing shell.o(.ARM.exidx.text.shellAnsiStart), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellInit), (8 bytes).
+    Removing shell.o(.text.shellDisplay), (50 bytes).
+    Removing shell.o(.ARM.exidx.text.shellDisplay), (8 bytes).
+    Removing shell.o(.text.shellSetKeyFuncList), (10 bytes).
+    Removing shell.o(.ARM.exidx.text.shellSetKeyFuncList), (8 bytes).
+    Removing shell.o(.text.shellGetCurrent), (80 bytes).
+    Removing shell.o(.ARM.exidx.text.shellGetCurrent), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellPrint), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellAnsi), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellHistory), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellHandler), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellHelp), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellDisplayItem), (8 bytes).
+    Removing shell.o(.ARM.exidx.text.shellClear), (8 bytes).
+    Removing shell.o(.rodata.shellDefaultKeyFunctionList), (48 bytes).
+    Removing shell.o(.rodata..L__const.shellDisplayValue.str), (12 bytes).
+    Removing shell_ext.o(.text), (0 bytes).
+    Removing shell_ext.o(.ARM.exidx.text.shellExtParsePara), (8 bytes).
+    Removing shell_ext.o(.ARM.exidx.text.shellExtRun), (8 bytes).
     Removing stm32f1xx_hal_gpio_ex.o(.text), (0 bytes).
     Removing stm32f1xx_hal_gpio_ex.o(.text.HAL_GPIOEx_ConfigEventout), (20 bytes).
     Removing stm32f1xx_hal_gpio_ex.o(.ARM.exidx.text.HAL_GPIOEx_ConfigEventout), (8 bytes).
@@ -2109,69 +2172,6 @@ Removing Unused input sections from the image.
     Removing stm32f1xx_hal_uart.o(.ARM.exidx.text.HAL_UART_GetError), (8 bytes).
     Removing stm32f1xx_hal_uart.o(.ARM.exidx.text.UART_DMAReceiveCplt), (8 bytes).
     Removing stm32f1xx_hal_uart.o(.ARM.exidx.text.UART_DMARxHalfCplt), (8 bytes).
-    Removing system_stm32f1xx.o(.text), (0 bytes).
-    Removing system_stm32f1xx.o(.ARM.exidx.text.SystemInit), (8 bytes).
-    Removing system_stm32f1xx.o(.text.SystemCoreClockUpdate), (92 bytes).
-    Removing system_stm32f1xx.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
-    Removing revdatainfo.o(.text), (0 bytes).
-    Removing revdatainfo.o(.text.getFifoIndex), (72 bytes).
-    Removing revdatainfo.o(.ARM.exidx.text.getFifoIndex), (8 bytes).
-    Removing revdatainfo.o(.ARM.exidx.text.createFifoRev), (8 bytes).
-    Removing revdatainfo.o(.text.setUartDmaIdleRev), (32 bytes).
-    Removing revdatainfo.o(.ARM.exidx.text.setUartDmaIdleRev), (8 bytes).
-    Removing revdatainfo.o(.text.setUartIntRev), (30 bytes).
-    Removing revdatainfo.o(.ARM.exidx.text.setUartIntRev), (8 bytes).
-    Removing revdatainfo.o(.text.delFifoRev), (24 bytes).
-    Removing revdatainfo.o(.ARM.exidx.text.delFifoRev), (8 bytes).
-    Removing revdatainfo.o(.text.sendBuffFifo), (92 bytes).
-    Removing revdatainfo.o(.ARM.exidx.text.sendBuffFifo), (8 bytes).
-    Removing revdatainfo.o(.ARM.exidx.text.UsartReceive_IDLE), (8 bytes).
-    Removing revdatainfo.o(.ARM.exidx.text.HAL_UART_ErrorCallback), (8 bytes).
-    Removing shellusart.o(.text), (0 bytes).
-    Removing shellusart.o(.ARM.exidx.text.shellRevData), (8 bytes).
-    Removing shellusart.o(.ARM.exidx.text.initShellusart), (8 bytes).
-    Removing shellusart.o(.ARM.exidx.text.shellWriteDebug), (8 bytes).
-    Removing waterflow.o(.text), (0 bytes).
-    Removing waterflow.o(.text.modbus_crc), (328 bytes).
-    Removing waterflow.o(.ARM.exidx.text.modbus_crc), (8 bytes).
-    Removing waterflow.o(.text.Rs485SendData), (58 bytes).
-    Removing waterflow.o(.ARM.exidx.text.Rs485SendData), (8 bytes).
-    Removing waterflow.o(.ARM.exidx.text.componeSendData), (8 bytes).
-    Removing waterflow.o(.ARM.exidx.text.Rs485RevData), (8 bytes).
-    Removing waterflow.o(.ARM.exidx.text.initWaterFlowComponet), (8 bytes).
-    Removing waterflow.o(.text.setLedStatus), (96 bytes).
-    Removing waterflow.o(.ARM.exidx.text.setLedStatus), (8 bytes).
-    Removing waterflow.o(.text.LoopLedStatus), (46 bytes).
-    Removing waterflow.o(.ARM.exidx.text.LoopLedStatus), (8 bytes).
-    Removing waterflow.o(.ARM.exidx.text.checkWaterFlow), (8 bytes).
-    Removing waterflow.o(.ARM.exidx.text.hal_tim_timer3_callback), (8 bytes).
-    Removing waterflow.o(.ARM.exidx.text.LoopWaterFlowComponet), (8 bytes).
-    Removing waterflow.o(.ARM.exidx.text.setDebugLog), (8 bytes).
-    Removing shell.o(.text), (0 bytes).
-    Removing shell.o(.ARM.exidx.text.shellEnter), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellTab), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellBackspace), (8 bytes).
-    Removing shell.o(.text.shellAnsiStart), (16 bytes).
-    Removing shell.o(.ARM.exidx.text.shellAnsiStart), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellInit), (8 bytes).
-    Removing shell.o(.text.shellDisplay), (50 bytes).
-    Removing shell.o(.ARM.exidx.text.shellDisplay), (8 bytes).
-    Removing shell.o(.text.shellSetKeyFuncList), (10 bytes).
-    Removing shell.o(.ARM.exidx.text.shellSetKeyFuncList), (8 bytes).
-    Removing shell.o(.text.shellGetCurrent), (80 bytes).
-    Removing shell.o(.ARM.exidx.text.shellGetCurrent), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellPrint), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellAnsi), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellHistory), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellHandler), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellHelp), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellDisplayItem), (8 bytes).
-    Removing shell.o(.ARM.exidx.text.shellClear), (8 bytes).
-    Removing shell.o(.rodata.shellDefaultKeyFunctionList), (48 bytes).
-    Removing shell.o(.rodata..L__const.shellDisplayValue.str), (12 bytes).
-    Removing shell_ext.o(.text), (0 bytes).
-    Removing shell_ext.o(.ARM.exidx.text.shellExtParsePara), (8 bytes).
-    Removing shell_ext.o(.ARM.exidx.text.shellExtRun), (8 bytes).
 
 819 unused section(s) (total 42418 bytes) removed from the image.
 
@@ -3256,14 +3256,14 @@ Memory Map of the image
     0x08001446   0x08001446   0x00000000   Code   RO         1536    .text               c_w.l(indicate_semi.o)
     0x08001446   0x08001446   0x00000002   PAD
     0x08001448   0x08001448   0x0000000c   Code   RO          122    .text.ADC1_2_IRQHandler  stm32f1xx_it.o
-    0x08001454   0x08001454   0x00000054   Code   RO          181    .text.ADC_ConversionStop_Disable  stm32f1xx_hal_adc.o
-    0x080014a8   0x080014a8   0x00000052   Code   RO          203    .text.ADC_DMAConvCplt  stm32f1xx_hal_adc.o
+    0x08001454   0x08001454   0x00000054   Code   RO          331    .text.ADC_ConversionStop_Disable  stm32f1xx_hal_adc.o
+    0x080014a8   0x080014a8   0x00000052   Code   RO          353    .text.ADC_DMAConvCplt  stm32f1xx_hal_adc.o
     0x080014fa   0x080014fa   0x00000002   PAD
-    0x080014fc   0x080014fc   0x00000016   Code   RO          207    .text.ADC_DMAError  stm32f1xx_hal_adc.o
+    0x080014fc   0x080014fc   0x00000016   Code   RO          357    .text.ADC_DMAError  stm32f1xx_hal_adc.o
     0x08001512   0x08001512   0x00000002   PAD
-    0x08001514   0x08001514   0x00000006   Code   RO          205    .text.ADC_DMAHalfConvCplt  stm32f1xx_hal_adc.o
+    0x08001514   0x08001514   0x00000006   Code   RO          355    .text.ADC_DMAHalfConvCplt  stm32f1xx_hal_adc.o
     0x0800151a   0x0800151a   0x00000002   PAD
-    0x0800151c   0x0800151c   0x000000ae   Code   RO          189    .text.ADC_Enable    stm32f1xx_hal_adc.o
+    0x0800151c   0x0800151c   0x000000ae   Code   RO          339    .text.ADC_Enable    stm32f1xx_hal_adc.o
     0x080015ca   0x080015ca   0x00000002   PAD
     0x080015cc   0x080015cc   0x00000002   Code   RO          104    .text.BusFault_Handler  stm32f1xx_it.o
     0x080015ce   0x080015ce   0x00000002   PAD
@@ -3274,105 +3274,105 @@ Memory Map of the image
     0x080015f6   0x080015f6   0x00000002   PAD
     0x080015f8   0x080015f8   0x0000000a   Code   RO           15    .text.Error_Handler  main.o
     0x08001602   0x08001602   0x00000002   PAD
-    0x08001604   0x08001604   0x00000110   Code   RO          239    .text.HAL_ADCEx_Calibration_Start  stm32f1xx_hal_adc_ex.o
-    0x08001714   0x08001714   0x00000002   Code   RO          259    .text.HAL_ADCEx_InjectedConvCpltCallback  stm32f1xx_hal_adc_ex.o
+    0x08001604   0x08001604   0x00000110   Code   RO          389    .text.HAL_ADCEx_Calibration_Start  stm32f1xx_hal_adc_ex.o
+    0x08001714   0x08001714   0x00000002   Code   RO          409    .text.HAL_ADCEx_InjectedConvCpltCallback  stm32f1xx_hal_adc_ex.o
     0x08001716   0x08001716   0x00000002   PAD
-    0x08001718   0x08001718   0x00000176   Code   RO          223    .text.HAL_ADC_ConfigChannel  stm32f1xx_hal_adc.o
+    0x08001718   0x08001718   0x00000176   Code   RO          373    .text.HAL_ADC_ConfigChannel  stm32f1xx_hal_adc.o
     0x0800188e   0x0800188e   0x00000002   PAD
-    0x08001890   0x08001890   0x00000002   Code   RO          215    .text.HAL_ADC_ConvCpltCallback  stm32f1xx_hal_adc.o
+    0x08001890   0x08001890   0x00000002   Code   RO          365    .text.HAL_ADC_ConvCpltCallback  stm32f1xx_hal_adc.o
     0x08001892   0x08001892   0x00000002   PAD
-    0x08001894   0x08001894   0x00000002   Code   RO          219    .text.HAL_ADC_ConvHalfCpltCallback  stm32f1xx_hal_adc.o
+    0x08001894   0x08001894   0x00000002   Code   RO          369    .text.HAL_ADC_ConvHalfCpltCallback  stm32f1xx_hal_adc.o
     0x08001896   0x08001896   0x00000002   PAD
-    0x08001898   0x08001898   0x00000002   Code   RO          221    .text.HAL_ADC_ErrorCallback  stm32f1xx_hal_adc.o
+    0x08001898   0x08001898   0x00000002   Code   RO          371    .text.HAL_ADC_ErrorCallback  stm32f1xx_hal_adc.o
     0x0800189a   0x0800189a   0x00000002   PAD
-    0x0800189c   0x0800189c   0x000000ee   Code   RO          213    .text.HAL_ADC_IRQHandler  stm32f1xx_hal_adc.o
+    0x0800189c   0x0800189c   0x000000ee   Code   RO          363    .text.HAL_ADC_IRQHandler  stm32f1xx_hal_adc.o
     0x0800198a   0x0800198a   0x00000002   PAD
-    0x0800198c   0x0800198c   0x00000160   Code   RO          177    .text.HAL_ADC_Init  stm32f1xx_hal_adc.o
-    0x08001aec   0x08001aec   0x00000002   Code   RO          217    .text.HAL_ADC_LevelOutOfWindowCallback  stm32f1xx_hal_adc.o
+    0x0800198c   0x0800198c   0x00000160   Code   RO          327    .text.HAL_ADC_Init  stm32f1xx_hal_adc.o
+    0x08001aec   0x08001aec   0x00000002   Code   RO          367    .text.HAL_ADC_LevelOutOfWindowCallback  stm32f1xx_hal_adc.o
     0x08001aee   0x08001aee   0x00000002   PAD
     0x08001af0   0x08001af0   0x000000b0   Code   RO           40    .text.HAL_ADC_MspInit  adc.o
-    0x08001ba0   0x08001ba0   0x0000011c   Code   RO          201    .text.HAL_ADC_Start_DMA  stm32f1xx_hal_adc.o
-    0x08001cbc   0x08001cbc   0x00000046   Code   RO          417    .text.HAL_DMA_Abort  stm32f1xx_hal_dma.o
+    0x08001ba0   0x08001ba0   0x0000011c   Code   RO          351    .text.HAL_ADC_Start_DMA  stm32f1xx_hal_adc.o
+    0x08001cbc   0x08001cbc   0x00000046   Code   RO          567    .text.HAL_DMA_Abort  stm32f1xx_hal_dma.o
     0x08001d02   0x08001d02   0x00000002   PAD
-    0x08001d04   0x08001d04   0x000000b4   Code   RO          419    .text.HAL_DMA_Abort_IT  stm32f1xx_hal_dma.o
-    0x08001db8   0x08001db8   0x000001a0   Code   RO          423    .text.HAL_DMA_IRQHandler  stm32f1xx_hal_dma.o
-    0x08001f58   0x08001f58   0x00000086   Code   RO          409    .text.HAL_DMA_Init  stm32f1xx_hal_dma.o
+    0x08001d04   0x08001d04   0x000000b4   Code   RO          569    .text.HAL_DMA_Abort_IT  stm32f1xx_hal_dma.o
+    0x08001db8   0x08001db8   0x000001a0   Code   RO          573    .text.HAL_DMA_IRQHandler  stm32f1xx_hal_dma.o
+    0x08001f58   0x08001f58   0x00000086   Code   RO          559    .text.HAL_DMA_Init  stm32f1xx_hal_dma.o
     0x08001fde   0x08001fde   0x00000002   PAD
-    0x08001fe0   0x08001fe0   0x000000a0   Code   RO          415    .text.HAL_DMA_Start_IT  stm32f1xx_hal_dma.o
-    0x08002080   0x08002080   0x00000028   Code   RO          293    .text.HAL_Delay     stm32f1xx_hal.o
-    0x080020a8   0x080020a8   0x0000020e   Code   RO          385    .text.HAL_GPIO_Init  stm32f1xx_hal_gpio.o
+    0x08001fe0   0x08001fe0   0x000000a0   Code   RO          565    .text.HAL_DMA_Start_IT  stm32f1xx_hal_dma.o
+    0x08002080   0x08002080   0x00000028   Code   RO          443    .text.HAL_Delay     stm32f1xx_hal.o
+    0x080020a8   0x080020a8   0x0000020e   Code   RO          535    .text.HAL_GPIO_Init  stm32f1xx_hal_gpio.o
     0x080022b6   0x080022b6   0x00000002   PAD
-    0x080022b8   0x080022b8   0x00000010   Code   RO          393    .text.HAL_GPIO_TogglePin  stm32f1xx_hal_gpio.o
-    0x080022c8   0x080022c8   0x0000000a   Code   RO          391    .text.HAL_GPIO_WritePin  stm32f1xx_hal_gpio.o
+    0x080022b8   0x080022b8   0x00000010   Code   RO          543    .text.HAL_GPIO_TogglePin  stm32f1xx_hal_gpio.o
+    0x080022c8   0x080022c8   0x0000000a   Code   RO          541    .text.HAL_GPIO_WritePin  stm32f1xx_hal_gpio.o
     0x080022d2   0x080022d2   0x00000002   PAD
-    0x080022d4   0x080022d4   0x0000000c   Code   RO          285    .text.HAL_GetTick   stm32f1xx_hal.o
-    0x080022e0   0x080022e0   0x0000001a   Code   RO          283    .text.HAL_IncTick   stm32f1xx_hal.o
+    0x080022d4   0x080022d4   0x0000000c   Code   RO          435    .text.HAL_GetTick   stm32f1xx_hal.o
+    0x080022e0   0x080022e0   0x0000001a   Code   RO          433    .text.HAL_IncTick   stm32f1xx_hal.o
     0x080022fa   0x080022fa   0x00000002   PAD
-    0x080022fc   0x080022fc   0x00000026   Code   RO          273    .text.HAL_Init      stm32f1xx_hal.o
+    0x080022fc   0x080022fc   0x00000026   Code   RO          423    .text.HAL_Init      stm32f1xx_hal.o
     0x08002322   0x08002322   0x00000002   PAD
     0x08002324   0x08002324   0x000000b0   Code   RO          148    .text.HAL_InitTick  stm32f1xx_hal_timebase_tim.o
     0x080023d4   0x080023d4   0x00000042   Code   RO          139    .text.HAL_MspInit   stm32f1xx_hal_msp.o
     0x08002416   0x08002416   0x00000002   PAD
-    0x08002418   0x08002418   0x00000022   Code   RO          445    .text.HAL_NVIC_EnableIRQ  stm32f1xx_hal_cortex.o
+    0x08002418   0x08002418   0x00000022   Code   RO          595    .text.HAL_NVIC_EnableIRQ  stm32f1xx_hal_cortex.o
     0x0800243a   0x0800243a   0x00000002   PAD
-    0x0800243c   0x0800243c   0x00000056   Code   RO          443    .text.HAL_NVIC_SetPriority  stm32f1xx_hal_cortex.o
+    0x0800243c   0x0800243c   0x00000056   Code   RO          593    .text.HAL_NVIC_SetPriority  stm32f1xx_hal_cortex.o
     0x08002492   0x08002492   0x00000002   PAD
-    0x08002494   0x08002494   0x00000020   Code   RO          441    .text.HAL_NVIC_SetPriorityGrouping  stm32f1xx_hal_cortex.o
-    0x080024b4   0x080024b4   0x000000f8   Code   RO          375    .text.HAL_RCCEx_GetPeriphCLKFreq  stm32f1xx_hal_rcc_ex.o
-    0x080025ac   0x080025ac   0x00000102   Code   RO          371    .text.HAL_RCCEx_PeriphCLKConfig  stm32f1xx_hal_rcc_ex.o
+    0x08002494   0x08002494   0x00000020   Code   RO          591    .text.HAL_NVIC_SetPriorityGrouping  stm32f1xx_hal_cortex.o
+    0x080024b4   0x080024b4   0x000000f8   Code   RO          525    .text.HAL_RCCEx_GetPeriphCLKFreq  stm32f1xx_hal_rcc_ex.o
+    0x080025ac   0x080025ac   0x00000102   Code   RO          521    .text.HAL_RCCEx_PeriphCLKConfig  stm32f1xx_hal_rcc_ex.o
     0x080026ae   0x080026ae   0x00000002   PAD
-    0x080026b0   0x080026b0   0x000001c2   Code   RO          337    .text.HAL_RCC_ClockConfig  stm32f1xx_hal_rcc.o
+    0x080026b0   0x080026b0   0x000001c2   Code   RO          487    .text.HAL_RCC_ClockConfig  stm32f1xx_hal_rcc.o
     0x08002872   0x08002872   0x00000002   PAD
-    0x08002874   0x08002874   0x00000042   Code   RO          355    .text.HAL_RCC_GetClockConfig  stm32f1xx_hal_rcc.o
+    0x08002874   0x08002874   0x00000042   Code   RO          505    .text.HAL_RCC_GetClockConfig  stm32f1xx_hal_rcc.o
     0x080028b6   0x080028b6   0x00000002   PAD
-    0x080028b8   0x080028b8   0x00000026   Code   RO          349    .text.HAL_RCC_GetPCLK1Freq  stm32f1xx_hal_rcc.o
+    0x080028b8   0x080028b8   0x00000026   Code   RO          499    .text.HAL_RCC_GetPCLK1Freq  stm32f1xx_hal_rcc.o
     0x080028de   0x080028de   0x00000002   PAD
-    0x080028e0   0x080028e0   0x00000026   Code   RO          351    .text.HAL_RCC_GetPCLK2Freq  stm32f1xx_hal_rcc.o
+    0x080028e0   0x080028e0   0x00000026   Code   RO          501    .text.HAL_RCC_GetPCLK2Freq  stm32f1xx_hal_rcc.o
     0x08002906   0x08002906   0x00000002   PAD
-    0x08002908   0x08002908   0x00000400   Code   RO          335    .text.HAL_RCC_OscConfig  stm32f1xx_hal_rcc.o
-    0x08002d08   0x08002d08   0x00000002   Code   RO          911    .text.HAL_TIMEx_BreakCallback  stm32f1xx_hal_tim_ex.o
+    0x08002908   0x08002908   0x00000400   Code   RO          485    .text.HAL_RCC_OscConfig  stm32f1xx_hal_rcc.o
+    0x08002d08   0x08002d08   0x00000002   Code   RO         1061    .text.HAL_TIMEx_BreakCallback  stm32f1xx_hal_tim_ex.o
     0x08002d0a   0x08002d0a   0x00000002   PAD
-    0x08002d0c   0x08002d0c   0x00000002   Code   RO          907    .text.HAL_TIMEx_CommutCallback  stm32f1xx_hal_tim_ex.o
+    0x08002d0c   0x08002d0c   0x00000002   Code   RO         1057    .text.HAL_TIMEx_CommutCallback  stm32f1xx_hal_tim_ex.o
     0x08002d0e   0x08002d0e   0x00000002   PAD
-    0x08002d10   0x08002d10   0x0000007e   Code   RO          901    .text.HAL_TIMEx_MasterConfigSynchronization  stm32f1xx_hal_tim_ex.o
+    0x08002d10   0x08002d10   0x0000007e   Code   RO         1051    .text.HAL_TIMEx_MasterConfigSynchronization  stm32f1xx_hal_tim_ex.o
     0x08002d8e   0x08002d8e   0x00000002   PAD
-    0x08002d90   0x08002d90   0x000000ec   Code   RO          606    .text.HAL_TIM_Base_Init  stm32f1xx_hal_tim.o
+    0x08002d90   0x08002d90   0x000000ec   Code   RO          756    .text.HAL_TIM_Base_Init  stm32f1xx_hal_tim.o
     0x08002e7c   0x08002e7c   0x00000044   Code   RO           65    .text.HAL_TIM_Base_MspInit  tim.o
-    0x08002ec0   0x08002ec0   0x0000006e   Code   RO          620    .text.HAL_TIM_Base_Start_IT  stm32f1xx_hal_tim.o
+    0x08002ec0   0x08002ec0   0x0000006e   Code   RO          770    .text.HAL_TIM_Base_Start_IT  stm32f1xx_hal_tim.o
     0x08002f2e   0x08002f2e   0x00000002   PAD
-    0x08002f30   0x08002f30   0x000001a0   Code   RO          786    .text.HAL_TIM_ConfigClockSource  stm32f1xx_hal_tim.o
-    0x080030d0   0x080030d0   0x00000002   Code   RO          742    .text.HAL_TIM_IC_CaptureCallback  stm32f1xx_hal_tim.o
+    0x08002f30   0x08002f30   0x000001a0   Code   RO          936    .text.HAL_TIM_ConfigClockSource  stm32f1xx_hal_tim.o
+    0x080030d0   0x080030d0   0x00000002   Code   RO          892    .text.HAL_TIM_IC_CaptureCallback  stm32f1xx_hal_tim.o
     0x080030d2   0x080030d2   0x00000002   PAD
-    0x080030d4   0x080030d4   0x00000170   Code   RO          740    .text.HAL_TIM_IRQHandler  stm32f1xx_hal_tim.o
-    0x08003244   0x08003244   0x00000002   Code   RO          744    .text.HAL_TIM_OC_DelayElapsedCallback  stm32f1xx_hal_tim.o
+    0x080030d4   0x080030d4   0x00000170   Code   RO          890    .text.HAL_TIM_IRQHandler  stm32f1xx_hal_tim.o
+    0x08003244   0x08003244   0x00000002   Code   RO          894    .text.HAL_TIM_OC_DelayElapsedCallback  stm32f1xx_hal_tim.o
     0x08003246   0x08003246   0x00000002   PAD
-    0x08003248   0x08003248   0x00000002   Code   RO          746    .text.HAL_TIM_PWM_PulseFinishedCallback  stm32f1xx_hal_tim.o
+    0x08003248   0x08003248   0x00000002   Code   RO          896    .text.HAL_TIM_PWM_PulseFinishedCallback  stm32f1xx_hal_tim.o
     0x0800324a   0x0800324a   0x00000002   PAD
     0x0800324c   0x0800324c   0x0000002a   Code   RO           17    .text.HAL_TIM_PeriodElapsedCallback  main.o
     0x08003276   0x08003276   0x00000002   PAD
-    0x08003278   0x08003278   0x00000002   Code   RO          750    .text.HAL_TIM_TriggerCallback  stm32f1xx_hal_tim.o
+    0x08003278   0x08003278   0x00000002   Code   RO          900    .text.HAL_TIM_TriggerCallback  stm32f1xx_hal_tim.o
     0x0800327a   0x0800327a   0x00000002   PAD
-    0x0800327c   0x0800327c   0x00000002   Code   RO         1009    .text.HAL_UARTEx_RxEventCallback  stm32f1xx_hal_uart.o
+    0x0800327c   0x0800327c   0x00000002   Code   RO         1159    .text.HAL_UARTEx_RxEventCallback  stm32f1xx_hal_uart.o
     0x0800327e   0x0800327e   0x00000002   PAD
-    0x08003280   0x08003280   0x0000021c   Code   RO          965    .text.HAL_UART_DMAStop  stm32f1xx_hal_uart.o
-    0x0800349c   0x0800349c   0x00000002   Code   RO         1074    .text.HAL_UART_ErrorCallback  revdatainfo.o
+    0x08003280   0x08003280   0x0000021c   Code   RO         1115    .text.HAL_UART_DMAStop  stm32f1xx_hal_uart.o
+    0x0800349c   0x0800349c   0x00000002   Code   RO          192    .text.HAL_UART_ErrorCallback  revdatainfo.o
     0x0800349e   0x0800349e   0x00000002   PAD
-    0x080034a0   0x080034a0   0x00000570   Code   RO         1001    .text.HAL_UART_IRQHandler  stm32f1xx_hal_uart.o
-    0x08003a10   0x08003a10   0x000000e2   Code   RO          925    .text.HAL_UART_Init  stm32f1xx_hal_uart.o
+    0x080034a0   0x080034a0   0x00000570   Code   RO         1151    .text.HAL_UART_IRQHandler  stm32f1xx_hal_uart.o
+    0x08003a10   0x08003a10   0x000000e2   Code   RO         1075    .text.HAL_UART_Init  stm32f1xx_hal_uart.o
     0x08003af2   0x08003af2   0x00000002   PAD
     0x08003af4   0x08003af4   0x00000178   Code   RO           82    .text.HAL_UART_MspInit  usart.o
-    0x08003c6c   0x08003c6c   0x00000160   Code   RO          957    .text.HAL_UART_Receive_DMA  stm32f1xx_hal_uart.o
-    0x08003dcc   0x08003dcc   0x00000054   Code   RO          945    .text.HAL_UART_Receive_IT  stm32f1xx_hal_uart.o
-    0x08003e20   0x08003e20   0x00000002   Code   RO         1015    .text.HAL_UART_RxCpltCallback  stm32f1xx_hal_uart.o
+    0x08003c6c   0x08003c6c   0x00000160   Code   RO         1107    .text.HAL_UART_Receive_DMA  stm32f1xx_hal_uart.o
+    0x08003dcc   0x08003dcc   0x00000054   Code   RO         1095    .text.HAL_UART_Receive_IT  stm32f1xx_hal_uart.o
+    0x08003e20   0x08003e20   0x00000002   Code   RO         1165    .text.HAL_UART_RxCpltCallback  stm32f1xx_hal_uart.o
     0x08003e22   0x08003e22   0x00000002   PAD
-    0x08003e24   0x08003e24   0x00000002   Code   RO         1017    .text.HAL_UART_RxHalfCpltCallback  stm32f1xx_hal_uart.o
+    0x08003e24   0x08003e24   0x00000002   Code   RO         1167    .text.HAL_UART_RxHalfCpltCallback  stm32f1xx_hal_uart.o
     0x08003e26   0x08003e26   0x00000002   PAD
-    0x08003e28   0x08003e28   0x00000278   Code   RO          939    .text.HAL_UART_Transmit  stm32f1xx_hal_uart.o
-    0x080040a0   0x080040a0   0x00000002   Code   RO         1011    .text.HAL_UART_TxCpltCallback  stm32f1xx_hal_uart.o
+    0x08003e28   0x08003e28   0x00000278   Code   RO         1089    .text.HAL_UART_Transmit  stm32f1xx_hal_uart.o
+    0x080040a0   0x080040a0   0x00000002   Code   RO         1161    .text.HAL_UART_TxCpltCallback  stm32f1xx_hal_uart.o
     0x080040a2   0x080040a2   0x00000002   PAD
     0x080040a4   0x080040a4   0x00000002   Code   RO          100    .text.HardFault_Handler  stm32f1xx_it.o
     0x080040a6   0x080040a6   0x00000002   PAD
-    0x080040a8   0x080040a8   0x000000b4   Code   RO         1118    .text.LoopWaterFlowComponet  waterflow.o
+    0x080040a8   0x080040a8   0x000000b4   Code   RO          236    .text.LoopWaterFlowComponet  waterflow.o
     0x0800415c   0x0800415c   0x0000007a   Code   RO           38    .text.MX_ADC1_Init  adc.o
     0x080041d6   0x080041d6   0x00000002   PAD
     0x080041d8   0x080041d8   0x00000054   Code   RO           54    .text.MX_DMA_Init   dma.o
@@ -3388,21 +3388,21 @@ Memory Map of the image
     0x080043ae   0x080043ae   0x00000002   PAD
     0x080043b0   0x080043b0   0x00000002   Code   RO          112    .text.PendSV_Handler  stm32f1xx_it.o
     0x080043b2   0x080043b2   0x00000002   PAD
-    0x080043b4   0x080043b4   0x0000001c   Code   RO         1106    .text.Rs485RevData  waterflow.o
+    0x080043b4   0x080043b4   0x0000001c   Code   RO          224    .text.Rs485RevData  waterflow.o
     0x080043d0   0x080043d0   0x00000002   Code   RO          108    .text.SVC_Handler   stm32f1xx_it.o
     0x080043d2   0x080043d2   0x00000002   PAD
     0x080043d4   0x080043d4   0x00000002   Code   RO          114    .text.SysTick_Handler  stm32f1xx_it.o
     0x080043d6   0x080043d6   0x00000002   PAD
-    0x080043d8   0x080043d8   0x00000002   Code   RO         1045    .text.SystemInit    system_stm32f1xx.o
+    0x080043d8   0x080043d8   0x00000002   Code   RO          163    .text.SystemInit    system_stm32f1xx.o
     0x080043da   0x080043da   0x00000002   PAD
     0x080043dc   0x080043dc   0x0000000c   Code   RO          124    .text.TIM1_UP_IRQHandler  stm32f1xx_it.o
     0x080043e8   0x080043e8   0x0000000c   Code   RO          126    .text.TIM3_IRQHandler  stm32f1xx_it.o
-    0x080043f4   0x080043f4   0x0000000c   Code   RO         1005    .text.UART_DMAAbortOnError  stm32f1xx_hal_uart.o
-    0x08004400   0x08004400   0x0000017c   Code   RO          955    .text.UART_DMAError  stm32f1xx_hal_uart.o
-    0x0800457c   0x0800457c   0x0000015e   Code   RO         1033    .text.UART_DMAReceiveCplt  stm32f1xx_hal_uart.o
+    0x080043f4   0x080043f4   0x0000000c   Code   RO         1155    .text.UART_DMAAbortOnError  stm32f1xx_hal_uart.o
+    0x08004400   0x08004400   0x0000017c   Code   RO         1105    .text.UART_DMAError  stm32f1xx_hal_uart.o
+    0x0800457c   0x0800457c   0x0000015e   Code   RO         1183    .text.UART_DMAReceiveCplt  stm32f1xx_hal_uart.o
     0x080046da   0x080046da   0x00000002   PAD
-    0x080046dc   0x080046dc   0x00000018   Code   RO         1035    .text.UART_DMARxHalfCplt  stm32f1xx_hal_uart.o
-    0x080046f4   0x080046f4   0x000000fe   Code   RO         1003    .text.UART_Receive_IT  stm32f1xx_hal_uart.o
+    0x080046dc   0x080046dc   0x00000018   Code   RO         1185    .text.UART_DMARxHalfCplt  stm32f1xx_hal_uart.o
+    0x080046f4   0x080046f4   0x000000fe   Code   RO         1153    .text.UART_Receive_IT  stm32f1xx_hal_uart.o
     0x080047f2   0x080047f2   0x00000002   PAD
     0x080047f4   0x080047f4   0x0000001a   Code   RO          128    .text.USART1_IRQHandler  stm32f1xx_it.o
     0x0800480e   0x0800480e   0x00000002   PAD
@@ -3410,39 +3410,39 @@ Memory Map of the image
     0x0800482a   0x0800482a   0x00000002   PAD
     0x0800482c   0x0800482c   0x00000002   Code   RO          106    .text.UsageFault_Handler  stm32f1xx_it.o
     0x0800482e   0x0800482e   0x00000002   PAD
-    0x08004830   0x08004830   0x000000d8   Code   RO         1072    .text.UsartReceive_IDLE  revdatainfo.o
-    0x08004908   0x08004908   0x0000012a   Code   RO         1114    .text.checkWaterFlow  waterflow.o
+    0x08004830   0x08004830   0x000000d8   Code   RO          190    .text.UsartReceive_IDLE  revdatainfo.o
+    0x08004908   0x08004908   0x0000012a   Code   RO          232    .text.checkWaterFlow  waterflow.o
     0x08004a32   0x08004a32   0x00000002   PAD
-    0x08004a34   0x08004a34   0x00000160   Code   RO         1104    .text.componeSendData  waterflow.o
-    0x08004b94   0x08004b94   0x0000008e   Code   RO         1062    .text.createFifoRev  revdatainfo.o
+    0x08004a34   0x08004a34   0x00000160   Code   RO          222    .text.componeSendData  waterflow.o
+    0x08004b94   0x08004b94   0x0000008e   Code   RO          180    .text.createFifoRev  revdatainfo.o
     0x08004c22   0x08004c22   0x00000002   PAD
-    0x08004c24   0x08004c24   0x00000004   Code   RO         1116    .text.hal_tim_timer3_callback  waterflow.o
-    0x08004c28   0x08004c28   0x00000016   Code   RO         1087    .text.initShellusart  shellusart.o
+    0x08004c24   0x08004c24   0x00000004   Code   RO          234    .text.hal_tim_timer3_callback  waterflow.o
+    0x08004c28   0x08004c28   0x00000016   Code   RO          205    .text.initShellusart  shellusart.o
     0x08004c3e   0x08004c3e   0x00000002   PAD
-    0x08004c40   0x08004c40   0x0000006c   Code   RO         1108    .text.initWaterFlowComponet  waterflow.o
+    0x08004c40   0x08004c40   0x0000006c   Code   RO          226    .text.initWaterFlowComponet  waterflow.o
     0x08004cac   0x08004cac   0x000000a6   Code   RO           11    .text.main          main.o
     0x08004d52   0x08004d52   0x00000002   PAD
-    0x08004d54   0x08004d54   0x0000000e   Code   RO         1120    .text.setDebugLog   waterflow.o
+    0x08004d54   0x08004d54   0x0000000e   Code   RO          238    .text.setDebugLog   waterflow.o
     0x08004d62   0x08004d62   0x00000002   PAD
-    0x08004d64   0x08004d64   0x000000a8   Code   RO         1153    .text.shellAnsi     shell.o
-    0x08004e0c   0x08004e0c   0x0000011a   Code   RO         1139    .text.shellBackspace  shell.o
+    0x08004d64   0x08004d64   0x000000a8   Code   RO          271    .text.shellAnsi     shell.o
+    0x08004e0c   0x08004e0c   0x0000011a   Code   RO          257    .text.shellBackspace  shell.o
     0x08004f26   0x08004f26   0x00000002   PAD
-    0x08004f28   0x08004f28   0x00000092   Code   RO         1163    .text.shellClear    shell.o
+    0x08004f28   0x08004f28   0x00000092   Code   RO          281    .text.shellClear    shell.o
     0x08004fba   0x08004fba   0x00000002   PAD
-    0x08004fbc   0x08004fbc   0x000000c0   Code   RO         1161    .text.shellDisplayItem  shell.o
-    0x0800507c   0x0800507c   0x00000538   Code   RO         1135    .text.shellEnter    shell.o
-    0x080055b4   0x080055b4   0x00000278   Code   RO         1183    .text.shellExtParsePara  shell_ext.o
-    0x0800582c   0x0800582c   0x000001b8   Code   RO         1185    .text.shellExtRun   shell_ext.o
-    0x080059e4   0x080059e4   0x00000358   Code   RO         1157    .text.shellHandler  shell.o
-    0x08005d3c   0x08005d3c   0x000002c0   Code   RO         1159    .text.shellHelp     shell.o
-    0x08005ffc   0x08005ffc   0x0000015c   Code   RO         1155    .text.shellHistory  shell.o
-    0x08006158   0x08006158   0x000000d0   Code   RO         1143    .text.shellInit     shell.o
-    0x08006228   0x08006228   0x0000004a   Code   RO         1151    .text.shellPrint    shell.o
+    0x08004fbc   0x08004fbc   0x000000c0   Code   RO          279    .text.shellDisplayItem  shell.o
+    0x0800507c   0x0800507c   0x00000538   Code   RO          253    .text.shellEnter    shell.o
+    0x080055b4   0x080055b4   0x00000278   Code   RO          301    .text.shellExtParsePara  shell_ext.o
+    0x0800582c   0x0800582c   0x000001b8   Code   RO          303    .text.shellExtRun   shell_ext.o
+    0x080059e4   0x080059e4   0x00000358   Code   RO          275    .text.shellHandler  shell.o
+    0x08005d3c   0x08005d3c   0x000002c0   Code   RO          277    .text.shellHelp     shell.o
+    0x08005ffc   0x08005ffc   0x0000015c   Code   RO          273    .text.shellHistory  shell.o
+    0x08006158   0x08006158   0x000000d0   Code   RO          261    .text.shellInit     shell.o
+    0x08006228   0x08006228   0x0000004a   Code   RO          269    .text.shellPrint    shell.o
     0x08006272   0x08006272   0x00000002   PAD
-    0x08006274   0x08006274   0x00000028   Code   RO         1085    .text.shellRevData  shellusart.o
-    0x0800629c   0x0800629c   0x00000332   Code   RO         1137    .text.shellTab      shell.o
+    0x08006274   0x08006274   0x00000028   Code   RO          203    .text.shellRevData  shellusart.o
+    0x0800629c   0x0800629c   0x00000332   Code   RO          255    .text.shellTab      shell.o
     0x080065ce   0x080065ce   0x00000002   PAD
-    0x080065d0   0x080065d0   0x00000020   Code   RO         1089    .text.shellWriteDebug  shellusart.o
+    0x080065d0   0x080065d0   0x00000020   Code   RO          207    .text.shellWriteDebug  shellusart.o
     0x080065f0   0x080065f0   0x0000003e   Code   RO         1410    CL$$btod_d2e        c_w.l(btod.o)
     0x0800662e   0x0800662e   0x00000046   Code   RO         1412    CL$$btod_d2e_denorm_low  c_w.l(btod.o)
     0x08006674   0x08006674   0x00000060   Code   RO         1411    CL$$btod_d2e_norm_op1  c_w.l(btod.o)
@@ -3488,35 +3488,35 @@ Memory Map of the image
     0x080077f9   0x080077f9   0x00000026   Data   RO         1383    .constdata          c_w.l(_printf_fp_hex.o)
     0x0800781f   0x0800781f   0x00000001   PAD
     0x08007820   0x08007820   0x00000094   Data   RO         1408    .constdata          c_w.l(bigflt0.o)
-    0x080078b4   0x080078b4   0x00000010   Data   RO         1050    .rodata.AHBPrescTable  system_stm32f1xx.o
-    0x080078c4   0x080078c4   0x00000008   Data   RO         1051    .rodata.APBPrescTable  system_stm32f1xx.o
-    0x080078cc   0x080078cc   0x00000002   Data   RO          362    .rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f1xx_hal_rcc.o
-    0x080078ce   0x080078ce   0x00000010   Data   RO          361    .rodata.cst16       stm32f1xx_hal_rcc.o
-    0x080078de   0x080078de   0x00000004   Data   RO         1171    .rodata.shellCmdcls  shell.o
-    0x080078e2   0x080078e2   0x00000009   Data   RO         1123    .rodata.shellCmddebuglog  waterflow.o
-    0x080078eb   0x080078eb   0x00000005   Data   RO         1167    .rodata.shellCmdhelp  shell.o
-    0x080078f0   0x080078f0   0x00000013   Data   RO         1172    .rodata.shellDesccls  shell.o
-    0x08007903   0x08007903   0x00000024   Data   RO         1124    .rodata.shellDescdebuglog  waterflow.o
-    0x08007927   0x08007927   0x0000000d   Data   RO         1168    .rodata.shellDeschelp  shell.o
-    0x08007934   0x08007934   0x0000002b   Data   RO         1169    .rodata.shellHelphelp  shell.o
-    0x0800795f   0x0800795f   0x00000136   Data   RO         1173    .rodata.str1.1      shell.o
+    0x080078b4   0x080078b4   0x00000010   Data   RO          168    .rodata.AHBPrescTable  system_stm32f1xx.o
+    0x080078c4   0x080078c4   0x00000008   Data   RO          169    .rodata.APBPrescTable  system_stm32f1xx.o
+    0x080078cc   0x080078cc   0x00000002   Data   RO          512    .rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f1xx_hal_rcc.o
+    0x080078ce   0x080078ce   0x00000010   Data   RO          511    .rodata.cst16       stm32f1xx_hal_rcc.o
+    0x080078de   0x080078de   0x00000004   Data   RO          289    .rodata.shellCmdcls  shell.o
+    0x080078e2   0x080078e2   0x00000009   Data   RO          241    .rodata.shellCmddebuglog  waterflow.o
+    0x080078eb   0x080078eb   0x00000005   Data   RO          285    .rodata.shellCmdhelp  shell.o
+    0x080078f0   0x080078f0   0x00000013   Data   RO          290    .rodata.shellDesccls  shell.o
+    0x08007903   0x08007903   0x00000024   Data   RO          242    .rodata.shellDescdebuglog  waterflow.o
+    0x08007927   0x08007927   0x0000000d   Data   RO          286    .rodata.shellDeschelp  shell.o
+    0x08007934   0x08007934   0x0000002b   Data   RO          287    .rodata.shellHelphelp  shell.o
+    0x0800795f   0x0800795f   0x00000136   Data   RO          291    .rodata.str1.1      shell.o
     0x08007a95   0x08007a95   0x00000003   PAD
     0x08007a98   0x08007a98   0x00000020   Data   RO         1592    Region$$Table       anon$$obj.o
     0x08007ab8   0x08007ab8   0x0000001c   Data   RO         1434    locale$$data        c_w.l(lc_numeric_c.o)
     0x08007ad4   0x08007ad4   0x00000110   Data   RO         1456    locale$$data        c_w.l(lc_ctype_c.o)
-    0x08007be4   0x08007be4   0x00000010   Data   RO         1125    shellCommand        waterflow.o
-    0x08007bf4   0x08007bf4   0x00000020   Data   RO         1170    shellCommand        shell.o
+    0x08007be4   0x08007be4   0x00000010   Data   RO          243    shellCommand        waterflow.o
+    0x08007bf4   0x08007bf4   0x00000020   Data   RO          288    shellCommand        shell.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08007c18, Size: 0x000016d0, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08007c18   0x00000008   Data   RW          324    .data..L_MergedGlobals  stm32f1xx_hal.o
-    0x20000008   0x08007c20   0x00000004   Data   RW         1049    .data.SystemCoreClock  system_stm32f1xx.o
-    0x2000000c   0x08007c24   0x00000004   Data   RW         1122    .data.simple_cur_max  waterflow.o
+    0x20000000   0x08007c18   0x00000008   Data   RW          474    .data..L_MergedGlobals  stm32f1xx_hal.o
+    0x20000008   0x08007c20   0x00000004   Data   RW          167    .data.SystemCoreClock  system_stm32f1xx.o
+    0x2000000c   0x08007c24   0x00000004   Data   RW          240    .data.simple_cur_max  waterflow.o
     0x20000010        -       0x00000060   Zero   RW         1450    .bss                c_w.l(libspace.o)
-    0x20000070        -       0x00000034   Zero   RW         1126    .bss..L_MergedGlobals  waterflow.o
+    0x20000070        -       0x00000034   Zero   RW          244    .bss..L_MergedGlobals  waterflow.o
     0x200000a4        -       0x00000030   Zero   RW           44    .bss.hadc1          adc.o
     0x200000d4        -       0x00000044   Zero   RW           45    .bss.hdma_adc1      adc.o
     0x20000118        -       0x00000044   Zero   RW           88    .bss.hdma_usart1_rx  usart.o
@@ -3525,10 +3525,10 @@ Memory Map of the image
     0x200001e8        -       0x00000048   Zero   RW           69    .bss.htim3          tim.o
     0x20000230        -       0x00000048   Zero   RW           86    .bss.huart1         usart.o
     0x20000278        -       0x00000048   Zero   RW           87    .bss.huart2         usart.o
-    0x200002c0        -       0x0000067c   Zero   RW         1076    .bss.sg_uartRevFifoBuff  revdatainfo.o
-    0x2000093c        -       0x00000178   Zero   RW         1091    .bss.shell          shellusart.o
-    0x20000ab4        -       0x00000014   Zero   RW         1166    .bss.shellList      shell.o
-    0x20000ac8        -       0x00000004   Zero   RW          323    .bss.uwTick         stm32f1xx_hal.o
+    0x200002c0        -       0x0000067c   Zero   RW          194    .bss.sg_uartRevFifoBuff  revdatainfo.o
+    0x2000093c        -       0x00000178   Zero   RW          209    .bss.shell          shellusart.o
+    0x20000ab4        -       0x00000014   Zero   RW          284    .bss.shellList      shell.o
+    0x20000ac8        -       0x00000004   Zero   RW          473    .bss.uwTick         stm32f1xx_hal.o
     0x20000acc   0x08007c28   0x00000004   PAD
     0x20000ad0        -       0x00000400   Zero   RW            2    HEAP                startup_stm32f103xb.o
     0x20000ed0        -       0x00000800   Zero   RW            1    STACK               startup_stm32f103xb.o
@@ -3541,36 +3541,36 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       298          0          0          0        116       5635   adc.o
-        84          0          0          0          0       2303   dma.o
-       138          0          0          0          0       1840   gpio.o
-       218          0          0          0          0       6447   main.o
-       360          0          0          0       1660       6640   revdatainfo.o
+       298          0          0          0        116       5517   adc.o
+        84          0          0          0          0       2185   dma.o
+       138          0          0          0          0       1722   gpio.o
+       218          0          0          0          0       6329   main.o
+       360          0          0          0       1660       6522   revdatainfo.o
       5132         46        426          0         20      23462   shell.o
       1072         90          0          0          0       4528   shell_ext.o
-        94          0          0          0        376       4893   shellusart.o
+        94          0          0          0        376       4775   shellusart.o
         64         26        236          0       3072        788   startup_stm32f103xb.o
-       116          0          0          8          4       6053   stm32f1xx_hal.o
-      1624          0          0          0          0      13828   stm32f1xx_hal_adc.o
-       274          0          0          0          0      10303   stm32f1xx_hal_adc_ex.o
-       152          0          0          0          0       8685   stm32f1xx_hal_cortex.o
-       960          0          0          0          0       8724   stm32f1xx_hal_dma.o
-       552         20          0          0          0       4867   stm32f1xx_hal_gpio.o
-        66          0          0          0          0       1266   stm32f1xx_hal_msp.o
-      1616          0         18          0          0       8175   stm32f1xx_hal_rcc.o
-       506         20          0          0          0       3884   stm32f1xx_hal_rcc_ex.o
-      1138          0          0          0          0      55995   stm32f1xx_hal_tim.o
-       130          0          0          0          0      20789   stm32f1xx_hal_tim_ex.o
-       176          0          0          0         72       5875   stm32f1xx_hal_timebase_tim.o
-      4254          0          0          0          0      32836   stm32f1xx_hal_uart.o
-       142          0          0          0          0       7132   stm32f1xx_it.o
-         2          0         24          4          0       1655   system_stm32f1xx.o
-       186          0          0          0         72       6050   tim.o
-       496          0          0          0        280       5974   usart.o
-       984         44         61          4         52      10053   waterflow.o
+       116          0          0          8          4       5758   stm32f1xx_hal.o
+      1624          0          0          0          0      13592   stm32f1xx_hal_adc.o
+       274          0          0          0          0      10067   stm32f1xx_hal_adc_ex.o
+       152          0          0          0          0       8449   stm32f1xx_hal_cortex.o
+       960          0          0          0          0       8488   stm32f1xx_hal_dma.o
+       552         20          0          0          0       4631   stm32f1xx_hal_gpio.o
+        66          0          0          0          0       1207   stm32f1xx_hal_msp.o
+      1616          0         18          0          0       7939   stm32f1xx_hal_rcc.o
+       506         20          0          0          0       3648   stm32f1xx_hal_rcc_ex.o
+      1138          0          0          0          0      55759   stm32f1xx_hal_tim.o
+       130          0          0          0          0      20553   stm32f1xx_hal_tim_ex.o
+       176          0          0          0         72       5757   stm32f1xx_hal_timebase_tim.o
+      4254          0          0          0          0      32600   stm32f1xx_hal_uart.o
+       142          0          0          0          0       7014   stm32f1xx_it.o
+         2          0         24          4          0       1596   system_stm32f1xx.o
+       186          0          0          0         72       5932   tim.o
+       496          0          0          0        280       5856   usart.o
+       984         44         61          4         52       9935   waterflow.o
 
     ----------------------------------------------------------------------
-     20968        246        800         16       5728     268680   Object Totals
+     20968        246        800         16       5728     264609   Object Totals
          0          0         32          0          0          0   (incl. Generated)
        134          0          3          0          4          0   (incl. Padding)
 
@@ -3697,8 +3697,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     30412        762       1352         16       5824     270940   Grand Totals
-     30412        762       1352         16       5824     270940   ELF Image Totals
+     30412        762       1352         16       5824     266869   Grand Totals
+     30412        762       1352         16       5824     266869   ELF Image Totals
      30412        762       1352         16          0          0   ROM Totals
 
 ==============================================================================

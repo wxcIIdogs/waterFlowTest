@@ -23,8 +23,8 @@ extern void LoopWaterFlowComponet(void);
 extern void setLedStatus(enum_LED_STATUS status);
 extern void hal_tim_timer3_callback(void);
 
-#define MAX_ADC_LEVEL 1900
-#define MIN_ADC_LEVEL 100
+#define MAX_ADC_LEVEL 1600
+#define MIN_ADC_LEVEL 300
 #define MAX_HZ   200
 #define MIN_HZ   1
 #define SENSOR_CURRENT_MAX  15
